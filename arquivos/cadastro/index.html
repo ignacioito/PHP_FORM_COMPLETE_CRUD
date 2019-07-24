@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <title>Cadastro</title>
+      <meta charset="utf-8"/>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Criei um style para formatar o form: -->
+      <link rel="stylesheet" type="text/css" href="css/style.css" >
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    </head>
+
+    <body>
+    <div class="container">
+      <h4 class="center">CADASTRO SOCIAL SERVIÇO DE CONVIVÊNCIA E FORTALECIMENTO DE VÍNCULOS</h4><br/>
+
+<form method="post" id="fContato" action="dados.php">
+  <fieldset id="cadastro">
+<legend>Identificação criança / adolescente / Voluntário</legend>
+<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="40" placeholder="Nome Completo" /></p>
+<p><label for="cRg">RG:</label><input type="text" name="tRg" id="cRg" size="9" maxlength="9" placeholder="RG"></p>
+<p><label for="cCpf">CPF:</label><input type="text" name="tCpf" id="cCpf" size="11" maxlength="11" placeholder="CPF"></p>
+<p><label for="cEmail">Email:</label><input type="email" name="tMail" id="cEmail" size="20" maxlength="40" placeholder="Email" /></p>
+<fieldset id="sexo"><legend>Sexo:</legend>
+  <input type="radio" name="tSexo" value="Masculino" id="cMasc" checked/><label for="cMasc">Masculino</label><br/>
+  <input type="radio" name="tSexo" value="Feminino"  id="cFem"/> <label for="cFem">Feminino</label><br/>
+</fieldset>
+<fieldset id="deficiencia"><legend>Possui deficiência?</legend>
+  <input type="radio" name="tDeficiencia" value="Sim" id="cSim" /><label for="cSim">Sim</label><br/>
+  <input type="radio" name="tDeficiencia" value="Nao" id="cNao" checked /><label for="cNao">Nao</label>
+</fieldset>
+<p><label for="cQual">Qual:<label><input type="text" name="tQual" id="cQual" size="20" maxlength="40" placeholder="Qual" /></p>
+<p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"></p>
+<p><label for="cNomeM">Nome da Mãe:</label><input type="text" name="tNomeM" id="cNomeM" size="20" maxlength="40" placeholder="Nome Completo" /></p>
+<p><label for="cTel">Telefone:</label><input type="number" name="tTel" id="cTel" placeholder="(11)99999-9999"/></p>
+
+
+<fieldset id="laudo"><legend>Laudo Médico?</legend>
+  <input type="radio" name='tLaudo' value="Sim" id='cLaudoSim' /><label for='cLaudoSim'>Sim</label><br/>
+  <input type="radio" name='tLaudo' value="Nao" id='cLaudoNao' checked/><label for='cLaudoNao'>Não</label>
+</fieldset>
+<br>
+<fieldset id="defasagem"><legend>Defasagem</legend>
+  <input type="radio" name="tDefa" value="Sim" id='cDefaSim'/><label for='cDefaSim'>Sim</label><br/>
+  <input type="radio" name="tDefa" value="Nao" id="cDefaNao" checked/><label for="cDefaNao">Não</label>
+</fieldset>                                                                                             
+
+<p><label for="cEscola">Escola:</label><input type="text" name="tEscola" id="cEscola" size="20" maxlength="40" placeholder="Nome da Escola"></p>
+<p><label for="cSerie">Série:</label><input type="text" name="tSerie" id="cSerie" size="20" maxlength="40" placeholder="Escreva por Extenso"></p>
+<fieldset><legend>Turno:</legend>
+  <input type="radio" value="Manha" name="tTurno" id="cManha" checked ><label for="cManha" >Manhã</label>
+  <input type="radio" value="Tarde" name="tTurno" id="cTarde"><label for="cTarde">Tarde</label>
+  <input type="radio" value="Noite" name="tTurno" id="cNoite"><label for="cNoite">Noite</label>
+</fieldset>
+
+<p><label for="cEspc">Especificar:</label><input type="text" name="tEspc" id="cEspc" size="30" maxlength="40" placeholder="Especifique"></p>
+<p><label for="cDif">Dificuldades de aprendizagem, alfabetização?</label><input type="text" name="tDif" id="cDif" size="20" maxlength="30" placeholder="Insira Texto"></p>
+
+  <fieldset id="cadastro_resp">
+<legend>Identificação do Responsável Familiar</legend>
+<p><label for="cNomeResp">Nome do Responsável:</label><input type="text" name="tNomeResp" id="cNomeResp" size="20" maxlength="40" placeholder="Nome Completo" /></p>
+<p><label for="cRgId">RG:</label><input type="text" name="tRgId" id="cRgId" size="9" maxlength="9" placeholder="RG"></p>
+<p><label for="cCpfId">CPF:</label><input type="text" name="tCpfId" id="cCpfId" size="11" maxlength="11" placeholder="CPF"></p>
+
+<fieldset id="endereco"><legend>Endereço:</legend>
+<p><label for="cRua">Rua:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua"></p>
+<p><label for="cNum">Número:</label><input type="Number" name="tNum" id="cNum" min="0" max="99999"></p>
+<p><label for="cCompl">Compl:</label><input type="text" name="tCompl" id="cCompl" size="10" maxlength="20"></p>
+<p><label for="cBairro">Bairro:</label><input type="text" name="tBairro" id="cBairro" size="30" maxlength="40"></p>
+<p><label for="cCep">Cep:</label><input type="number" name="tCep" id="cCep"></p>
+<p><label for="cRef">Ref:</label><input type="text" name="tRef" id="cRef" size="30" maxlength="40"></p>
+<p><label for="cNasc2">Data de Nascimento:</label><input type="date" name="tNasc2" id="cNasc2"></p>
+<p><label for="cTel2">Telefone:</label><input type="text" name="tTel2" id="cTel2" size="30" maxlength="40"></p></fieldset>
+
+
+<fieldset id="dependencia"><legend>Dependência Química:</legend>
+  <input type="radio" value="Sim" name="tDepend" id="cDepend1" checked><label for="cDepend1" >Sim</label>
+  <input type="radio" value="Nao" name="tDepend" id="cDepend2"><label for="cDepend2">Não</label>
+
+<p><label for="cQual2">Qual:</label><input type="text" name="tQual2" id="cQual2" size="13" maxlength="80" placeholder="Digite o texto"></p>
+<p><label for="cQuem">Quem:</label><input type="text" name="tQuem" id="cQuem" size="13" maxlength="80" placeholder="Digite o texto"></p>
+<p><label for="tRtrab">Relação de Trabalho:</label><input type="text" name="tRtrab" id="cRtrab" size="13" maxlength="80" placeholder="Digite o texto"></p>
+<p><label for="cNumM">Nº de Membros:</label><input type="number" name="tNumM" id="cNumM" placeholder="Digite o texto"></p>
+<p><label for="cValor2">Renda Mensal R$:</label><input type="text" name="tValor2" id="cValor2"></p>
+<p><label for="tPC">Per Capita:</label><input type="text" name="tPC" id="cPC" size="13" maxlength="80" placeholder="Digite o texto"></p></fieldset>
+
+
+<fieldset id="beneficiario"><legend>Beneficiário de Programas de Transferência de Renda:</legend>
+  <input type="radio" value="Sim" name="tBen" id="cBen1" checked><label for="cBen1" >Sim</label>
+  <input type="radio" value="Nao" name="tBen" id="cBen2"><label for="cBen2">Não</label>
+</fieldset>
+<p><label for="cValor1">Valor R$:</label><input type="text" name="tValor" id="cValor1"></p>
+  </fieldset>
+
+  <fieldset id="dados_familiares">
+<table class="responsive-table  highlight light-blue lighten-4" id="tabelaspec">
+<caption><h1>Composição Familiar:</h1></caption>
+
+<tr><td class="ce"><label for="cNomeMor">Nome dos Moradores</label></td><td class="cd"><input type="text" name="tNomeMor" id="cNomeMor" size="20" maxlength="40"></td></tr>
+<tr><td class="ce"><label for="cVinc">Vínculo</label></td><td class="cd"><input type="text" name="tVinc" id="cVinc" size="20" maxlength="40"></td></tr>
+<tr><td class="ce"><label for="cDN">Data Nascimento</label></td><td class="cd"><input type="date" name="tDN" id="cDN" ></td></tr>
+<tr><td class="ce"><label for="cEsc">Escolaridade</label></td><td class="cd"><input type="text" name="tEsc" id="cEsc" size="20" maxlength="40"></td></tr>
+<tr><td class="ce"><label for="cOc">Ocupação</label></td><td class="cd"><input type="text" name="tOc" id="cOc" size="20" maxlength="40"></td></tr>
+
+</table>
+</fieldset>
+<br/>
+<fieldset id="condicoes_moradia"><legend>Condições de Moradia:</legend>
+<input type="radio" value="Propria" name="tMoradia" id="cPropria" checked><label for="cPropria">Própria</label> 
+<input type="radio" value="Cedida" name="tMoradia" id="cCedida"><label for="cCedida">Cedida</label> 
+<input type="radio" value="Area de Ocupacao" name="tMoradia" id="cOcup"><label for="cOcup">Área de Ocupação</label> 
+<input type="radio" value="Alugada" name="tMoradia" id="cAlug"><label for="cAlug">Alugada</label><br/> 
+<label for="cValor3">Valor R$:</label><input type="text" name="tValor3" id="cValor3"></fieldset><br/>
+
+<fieldset id="tipo_construcao"><legend>Tipo de Construção:</legend>
+<input type="radio" value="Alvenaria" name="tConstr" id="cAlv" checked><label for="cAlv">Alvenaria</label>
+<input type="radio" value="Madeira" name="tConstr" id="cMad"><label for="cMad">Madeira</label>
+<input type="radio" value="Mista" name="tConstr" id="cMist"><label for="cMist">Mista</label></fieldset>
+
+<p><label for="cAtv">Atividades:</label><input type="text" name="tAtv" id="cAtv" size="30" maxlength="40" placeholder="Insira Texto"></p>
+
+<p><label for="cTr">Técnico Responsável:</label><input type="text" name="tTr" id="cTr" size="30" maxlength="40" placeholder="Insira Texto"></p><br><br><br><br>
+
+<input type="submit" class="waves-effect waves-light btn right blue darken-1" value="ENVIAR" /><br><br><br><br>
+
+    
+</form>
+<footer class="page-footer card-panel  blue darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">L&I Comunicação</h5>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <img src="images/logo.png" alt="Logo" style="width: 50px; height: 50px; float: left;"> <p>© 2017 Copyright L&I Comunicação</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+  </html>

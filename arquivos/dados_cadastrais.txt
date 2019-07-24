@@ -1,0 +1,73 @@
+CADASTRO SOCIAL SERVIÇO DE CONVIVÊNCIA E FORTALECIMENTO DE VÍNCULOS
+
+1 Identificação da criança / adolescente
+Nome:
+D.N:
+RG:
+CPF:
+Sexo:
+	-Masculino
+	-Feminino
+Data de Nascimento:
+Nome da Mãe:
+Possui deficiência?
+	-Sim
+	-Não
+Qual:
+Laudo Médico?
+	-Sim
+	-Não
+Escola:
+Série:
+Turno:
+	-Manhã
+	-Tarde
+	-Noite
+Defasagem:
+	-Sim
+	-Não
+Especificar:
+Dificuldades de aprendizagem, alfabetização?
+
+2 Identificação do Responsável Familiar
+Nome do Responsável:
+RG:
+CPF:
+Endereço:
+Compl:
+Bairro:
+Cep:
+Ref:
+D.N:
+Telefone:
+Dependência Química:
+	-Sim
+	-Não
+Qual:
+Quem:
+Relação de Trabalho:
+Nº de Membros:
+Renda Mensal:
+Per Capita:
+Beneficiário de Programas de Transferência de Renda:
+	-Sim
+	-Não
+Valor R$:
+
+3 Composição Familiar:
+TABELA
+Nome dos Moradores/Vínculo/D.N./Escolaridade/Ocupação
+
+4 Habitação
+Condições de Moradia:
+()Própria ()Cedida ()Área de Ocupação ()Alugada R$:
+Tipo de Construção:
+()Alvenaria ()Madeira ()Mista
+
+Atividades:
+
+Técnico Responsável:
+
+<fieldset id="deficiencia"><legend>Possui deficiência?</legend>
+  <input type="radio" name="tSim" id="cSim"/><label for="cSim">Sim</label><br/>
+  <input type="radio" name="tNao" id="cNao"/><label for="cNao">Não</label></fieldset>
